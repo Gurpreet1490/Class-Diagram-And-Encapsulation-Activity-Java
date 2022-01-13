@@ -1,0 +1,30 @@
+@startuml
+
+
+ class Student{
+    -String final name
+    -String Grade
+    -Int Group
+    -String final nickName
+    +getName(): String
+    +getGrade(): String
+    +getGroup(): int
+    +upGarde(): void
+    +downGrade(): void
+
+ }
+
+ enum Grade{
+ final int order
+ +getOrder(int)
+ +getByOrder(): static
+ }
+
+ enum Group{
+  final int value
+  +getValue(int)
+  +getByValue(): static
+ }
+
+
+@enduml
